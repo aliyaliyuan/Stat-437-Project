@@ -6,12 +6,12 @@ Link to the Dataset: https://www.kaggle.com/datasets/blueblushed/hospital-datase
 
 # Statistical Methods used in the paper
 * Generalized Linear Mixed Models (GLMM)
-- GLMM with poisson distribution and log-link function
-- GLMM with normal distribution and linear function
+* - GLMM with poisson distribution and log-link function
+* - GLMM with normal distribution and linear function
 * Independant t-tests
 * Coefficient Variation (CV) - calculated vy diving the stadard deviation by the mean
 * Generalized Linear Models (GLM)
-- GLM with normal distribution and linear function
-- GLM with binomial distribution and logit-link function
+* - GLM with normal distribution and linear function
+* - GLM with binomial distribution and logit-link function
 
 R Packages Used:
