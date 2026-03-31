@@ -6,6 +6,7 @@
 **Link to the Dataset:** https://www.kaggle.com/datasets/blueblushed/hospital-dataset-for-practice
 
 # Project Introduction
+add summary of paper and what we did on our dataset
 
 # Statistical Methods used in the paper
 * Generalized Linear Mixed Models (GLMM)
@@ -18,3 +19,4 @@
 * - GLM with binomial distribution and logit-link function
 
 **R Packages Used:**
+list the r packages and versions we used in our code
