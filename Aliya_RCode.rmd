@@ -70,3 +70,27 @@ model_glmm <- glmer(
 
 summary(model_glmm)
 
+
+# Gaussian with linear function
+df <- df %>%
+  mutate(time_group = cut(
+    time,
+    breaks = c(4, 38, 73, 143, 213, 248, 285),
+    labels = c("4-38", "39-73", "74-143", "144-213", "214-248", "249-284"),
+    include.lowest = TRUE
+  ))
+
+df$cluster <- interaction(df$age_group, df$sex)
+df$serum_creatinine <- scale(df$serum_creatinine)
+
+library(lme4)
+df$serum_creatinine <- scale(df$serum_creatinine)
+
+model_glmm_gaussian <- lmer(
+  serum_creatinine ~ age_group * time_group + platelet_group + sex +
+    (1 | cluster),
+  data = df
+)
+
+summary(model_glmm_gaussian)
+
